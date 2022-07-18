@@ -1139,8 +1139,62 @@ margin-left: auto;
 padding: 4px;
 height: 30px;
 width: 30px;
-fill: var(--white);
+fill: var(--main-color);
 stroke: rgba(0, 4, 4, 25%);
 }
 
+.modal-close:hover {
+fill: var(--accent-color);
+}
+
+/*Form-modal-window*/
+
+.modal .form-modal {
+padding-top: 0px;
+padding-bottom: 40px;
+padding-left: 41px;
+margin-right: 39px;
+width: 100%;
+height: 100%;
+margin: 0;
+}
+
+.form-md-title {
+margin: 0;
+
+font-family: 'Roboto';
+font-weight: 700;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+
+}
+
+.form-md-label {
+display: flex;
+flex-direction: column;
+margin: 0;
+}
+
+.form-btn{
+display: flex;
+
+align-items: center;
+width: 200px;
+padding: 10px 52px;
+margin-left: 12px;
+border: none;
+border-radius: 4px;
+
+color: var(--white);
+background-color: var(--accent-color);
+cursor: pointer;
+
+font-family: 'Roboto';
+font-weight: 700;
+font-size: 16px;
+line-height: 1.9;
+letter-spacing: 0.06em;
+text-align: center;
+}
 
