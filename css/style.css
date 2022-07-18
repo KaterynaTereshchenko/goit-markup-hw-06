@@ -1024,6 +1024,18 @@ body {
 
 /*Form-footer*/
 
+.form-footer{
+display: flex;
+width: 570px;
+flex-direction: column;
+margin-left: 93px;
+}
+
+.form-conteiner {
+ display: flex;
+
+}
+
 .icon-form {
 width: 24px;
 height: 24px;
@@ -1036,6 +1048,7 @@ justify-content: center;
 align-items: center;
 width: 200px;
 padding: 10px 28px;
+margin-left: 12px;
 border: none;
 border-radius: 4px;
 
@@ -1067,7 +1080,7 @@ text-align: center;
   color: var(--white);
 }
 
-.form-in {
+.label-footer .form-in {
 width: 358px;
 height: 50px;
 padding-top: 15px;
@@ -1075,11 +1088,10 @@ padding-bottom: 15px;
 padding-right: 295px;
 padding-left: 16px;
 border: 1px solid rgb(255, 255, 255, 30%);
+border-radius: 4px;
 
 color: var(--color-button);
 background-color: var(--footer-color);
-
-
 }
 
 /*modal window*/
