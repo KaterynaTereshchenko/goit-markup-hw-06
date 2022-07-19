@@ -338,7 +338,7 @@
           </ul>
           </div>
           <!--Form-footer-->
-            <form name="signup_form" autocomplete="on" validate class="form-footer">
+            <form name="signup_form" autocomplete="on" class="form-footer">
               <h4 class="form-title">Підпишіться на розсилку</h4>
               <div class="form-conteiner">
               <label class="label-footer"> 
@@ -350,6 +350,7 @@
           </div>
       </div>
     </footer>
+
     <!--Modal-window-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal" data-modal-close>
@@ -358,29 +359,21 @@
           </svg>
 
           <!--Form-modal-window--->
-          <form name="signup_form" autocomplete="on" validate class="form-modal">
+          <form name="signup_form" autocomplete="on" class="form-modal">
             <h4 class="form-md-title">Залиште свої дані, ми вам передзвонимо</h4>
             <div class="form-md-label">
-            <label>
-              Ім'я
-              <input type="text" name="username" autofocus placeholder="Катерина Терещенко"/> 
-            </label>
-            <label>
-              Телефон
-              <input type="tel" name="telefone" placeholder="+380675721658"/>
-            </label>
-            <label>
-              Пошта
-              <input type="email" name="mail" placeholder="my@gmail.com"/>
-            </label>
-            <label>
-              Коментар
-              <textarea name="feedback" rows="8" placeholder="Введіть текст"></textarea>
-            </label>
+                <label for="username" class="label-md">Ім'я</label>
+                <input type="text" name="username" placeholder="Катерина Терещенко" id="username" autofocus class="input-md"/> 
+                <label for="tel" class="label-md">Телефон</label>
+                <input type="tel" name="telefone" placeholder="+380675721658" id="tel" class="input-md"/>
+                <label for="mail" class="label-md">Пошта</label>
+                <input type="email" name="mail" placeholder="my@gmail.com" id="mail" class="input-md"/>
+                <label for="comment" class="label-md">Коментар</label>
+                <textarea name="feedback" rows="8" placeholder="Введіть текст" id="comment" class="textarea-md"></textarea>
             </div>
-            <div>
+            <div class="chekbox-md">
             <input type="checkbox" name="checkbox" id="confidence"/>
-            <label>Погоджуюся з розсилкою та приймаю <a href=""><span>Умови договору</span></a></label>
+            <label class="confidence-md">Погоджуюся з розсилкою та приймаю<a href="" class="list"><span class="confidence-link">Умови договору</span></a></label>
             </div>
             <button type="submit" class="form-btn">Відправити</button>
           

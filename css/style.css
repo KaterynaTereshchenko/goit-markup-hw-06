@@ -27,6 +27,7 @@ body {
 
 .list {
     list-style: none;
+   
 }
 
 /*logo*/
@@ -1115,7 +1116,7 @@ pointer-events: none;
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0.5);
+transform: translate(-50%, -50%) scale(0.5);
 }
 
 .modal {
@@ -1141,6 +1142,7 @@ height: 30px;
 width: 30px;
 fill: var(--main-color);
 stroke: rgba(0, 4, 4, 25%);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover {
@@ -1149,15 +1151,17 @@ fill: var(--accent-color);
 
 /*Form-modal-window*/
 
-.modal .form-modal {
+.form-modal {
 padding: 0px;
-width: 100%;
-height: 100%;
 margin: 0;
 }
 
 .form-md-title {
-margin: 0;
+text-align: center;
+margin-top: 0px;
+margin-bottom: 12px;
+margin-right: 0px;
+margin-left: 0px;
 
 font-family: 'Roboto';
 font-weight: 700;
@@ -1170,7 +1174,72 @@ letter-spacing: 0.03em;
 .form-md-label {
 display: flex;
 flex-direction: column;
-margin: 0;
+justify-content: center;
+
+margin: 0px auto 20px auto;
+width: 448px;
+height: 342px;
+}
+
+.label-md {
+margin-bottom: 4px;
+
+color: var(--sec-color);
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 12px;
+line-height: 1.2;
+letter-spacing: 0.01em;
+}
+
+.input-md,
+.textarea-md {
+width: 448px;
+height: 40px;
+margin-bottom: 10px;
+padding-left: 12px;
+
+color: rgba(117, 117, 117, 0.5);
+
+background-color: var(--white);
+border: 1px solid rgba(33, 33, 33, 0.2);
+/*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);*/
+border-radius: 4px;
+}
+
+.textarea-md {
+height: 120px;
+resize: none;
+}
+
+.chekbox-md {
+display: flex;
+justify-content: center;
+
+
+height: 24px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
+}
+
+.confidence-md {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+letter-spacing: 0.03em;
+color: var(--sec-color);
+margin-left: 7px;
+
+}
+
+.confidence-link {
+color: var(--accent-color);
+text-decoration: underline;
+text-underline-position: var(--accent-color);
+margin-left: 5px;
 }
 
 .form-btn{
@@ -1179,9 +1248,11 @@ display: flex;
 align-items: center;
 width: 200px;
 padding: 10px 52px;
-margin-left: 12px;
+margin-left: auto;
+margin-right: auto;
 border: none;
 border-radius: 4px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 color: var(--white);
 background-color: var(--accent-color);
@@ -1193,5 +1264,8 @@ font-size: 16px;
 line-height: 1.9;
 letter-spacing: 0.06em;
 text-align: center;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+
 
