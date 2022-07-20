@@ -362,18 +362,27 @@
           <form name="signup_form" autocomplete="on" class="form-modal">
             <h4 class="form-md-title">Залиште свої дані, ми вам передзвонимо</h4>
             <div class="form-md-label">
-                <label for="username" class="label-md">Ім'я</label>
-                <input type="text" name="username" placeholder="Катерина Терещенко" id="username" autofocus class="input-md"/> 
-                <label for="tel" class="label-md">Телефон</label>
-                <input type="tel" name="telefone" placeholder="+380675721658" id="tel" class="input-md"/>
-                <label for="mail" class="label-md">Пошта</label>
-                <input type="email" name="mail" placeholder="my@gmail.com" id="mail" class="input-md"/>
-                <label for="comment" class="label-md">Коментар</label>
-                <textarea name="feedback" rows="8" placeholder="Введіть текст" id="comment" class="textarea-md"></textarea>
-            </div>
+                <label class="label-md">Ім'я
+                      <input type="text" name="username" placeholder="Катерина Терещенко" autofocus class="input-md"/> 
+                      <span><svg class="icon-md"><use href="./images/symbol-defs-three.svg#icon-person-black"></use></svg></span>
+                </label>
+                <label class="label-md">Телефон
+                        <input type="tel" name="telefone" placeholder="+380675721658" class="input-md"/>
+                        <span><svg class="icon-md"><use href="./images/symbol-defs-three.svg#icon-phone-black"></use></svg></span>
+                 </label>
+                <label class="label-md">Пошта
+                        <input type="email" name="mail" placeholder="my@gmail.com" class="input-md"/>
+                        <span><svg class="icon-md"><use href="./images/symbol-defs-three.svg#icon-email-black"></use></svg></span>
+                </label>
+                <label class="label-md">Коментар
+                        <textarea name="feedback" rows="8" placeholder="Введіть текст" class="textarea-md"></textarea>
+                </label>
+              </div>
             <div class="chekbox-md">
-            <input type="checkbox" name="checkbox" id="confidence"/>
-            <label class="confidence-md">Погоджуюся з розсилкою та приймаю<a href="" class="list"><span class="confidence-link">Умови договору</span></a></label>
+             <label class="confidence-md">
+              <input type="checkbox" name="checkbox" class="chekbox-input"/>
+              <svg class="chekbox-icon"><use href="./images/symbol-defs-three.svg#icon-icon-check"></use></svg>
+              Погоджуюся з розсилкою та приймаю<a href="" class="list"><span class="confidence-link">Умови договору</span></a></label>
             </div>
             <button type="submit" class="form-btn">Відправити</button>
           
