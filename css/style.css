@@ -99,7 +99,7 @@ body {
  /*header*/
  
  .conteiner-primary {
-     min-width: 1200px;
+     max-width: 1200px;
      margin-left: auto;
      margin-right: auto;
      
@@ -448,7 +448,7 @@ body {
 }
 
 .team-title {
-    min-width: 1200px;
+    max-width: 1200px;
     margin-bottom: 50px;
     margin-top: 0px;
 }
@@ -658,7 +658,7 @@ body {
 /*portfolio-exampl*/
 
     .portfolio {
-    min-width: 1200px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
