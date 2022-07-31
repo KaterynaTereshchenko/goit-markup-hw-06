@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -317,7 +317,7 @@
         </address>
         </div>
         <div class="social conteiner-social">
-          <h4 class="footer-social">Приєднуйтесь</h4>
+          <h2 class="footer-social">Приєднуйтесь</h2>
           <ul class="social-list">
             <li class="social-item"><a href="" class="social-link social-footer"><svg class="social-icon footer-icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
@@ -335,51 +335,52 @@
           </div>
           <!--Form-footer-->
             <form name="signup_form" autocomplete="on" class="form-footer">
-              <h4 class="form-title">Підпишіться на розсилку</h4>
-              <div class="form-conteiner">
-              <label class="label-footer"> 
-                <input type="email" name="email" placeholder="E-mail" required class="form-in"/>
-              </label>
-              <button type="submit" class="form-button">Підписатися<svg class="icon-form"><use href="./images/icons.svg#icon-icon-send"></use></svg></button>
-            </div>
+              <h2 class="form-title">Підпишіться на розсилку</h2>
+                <div class="form-conteiner">
+                    <label class="label-footer"> 
+                        <input type="email" name="email" placeholder="E-mail" required class="form-in"/>
+                     </label>
+                      <button type="submit" class="form-button">Підписатися<svg class="icon-form">
+                        <use href="./images/icons.svg#icon-icon-send"></use></svg>
+                       </button>
+                </div>
             </form>
           </div>
     </footer>
-
     <!--Modal-window-->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal" data-modal-close>
-         <svg  class="modal-close" >
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+            <svg class="modal-icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
           <!--Form-modal-window-->
           <form name="signup_form" autocomplete="on" class="form-modal">
-            <h4 class="form-md-title">Залиште свої дані, ми вам передзвонимо</h4>
+            <p class="form-md-title">Залиште свої дані, ми вам передзвонимо</p>
             <div class="form-md-label">
                 <label class="label-md">Ім'я
                       <input type="text" name="username" placeholder="Катерина Терещенко" autofocus class="input-md"/> 
-                      <span><svg class="icon-md"><use href="./images/icons.svg#icon-person-black"></use></svg></span>
+                      <svg class="icon-md"><use href="./images/icons.svg#icon-person-black"></use></svg>
                 </label>
                 <label class="label-md">Телефон
                         <input type="tel" name="telefone" placeholder="+380675721658" class="input-md"/>
-                        <span><svg class="icon-md"><use href="./images/icons.svg#icon-phone-black"></use></svg></span>
+                        <svg class="icon-md"><use href="./images/icons.svg#icon-phone-black"></use></svg>
                  </label>
                 <label class="label-md">Пошта
                         <input type="email" name="mail" placeholder="my@gmail.com" class="input-md"/>
-                        <span><svg class="icon-md"><use href="./images/icons.svg#icon-email-black"></use></svg></span>
+                        <svg class="icon-md"><use href="./images/icons.svg#icon-email-black"></use></svg>
                 </label>
                 <label class="label-md">Коментар
                         <textarea name="feedback" rows="8" placeholder="Введіть текст" class="textarea-md"></textarea>
                 </label>
               </div>
-            <div class="chekbox-md">
-             <label class="confidence-md">
+            <label class="confidence-md">
               <input type="checkbox" name="checkbox" class="chekbox-input"/>
               <svg class="chekbox-icon"><use href="./images/icons.svg#icon-icon-check" class="chekbox-svg"></use></svg>
-              Погоджуюся з розсилкою та приймаю<a href="" class="list"><span class="confidence-link">Умови договору</span></a></label>
-            </div>
-            <button type="submit" class="form-btn">Відправити</button>
-          
+              Погоджуюся з розсилкою та приймаю<a href="" class="list"><span class="confidence-link">Умови договору</span></a>
+            </label>
+            <button type="submit" class="form-btn">Відправити</button>    
           </form>
         </div>
     </div>

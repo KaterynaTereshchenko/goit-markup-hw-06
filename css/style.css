@@ -98,6 +98,9 @@ body {
 
  /*header*/
  
+  .header {
+      border-bottom: 1px solid #ECECEC;
+  }
  .conteiner-primary {
      width: 1200px;
      margin-left: auto;
@@ -204,6 +207,8 @@ body {
  /*hero*/
 
   .section-title {
+    width: 696px;
+    margin: 0 auto 30px;
     color: var(--white);
     font-weight: 900;
     font-size: 44px;
@@ -218,15 +223,8 @@ body {
     padding-bottom: 0px;
  }
 
-    .hero-conteiner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 696px;
-        }
-
     .overlay {
-    min-width: 1600px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 200px;
@@ -583,9 +581,6 @@ body {
 
 /*portfolio site-link*/
 
- .header {
-    border-bottom: 1px solid #ECECEC;
-   }
 
 /*site-nav -portfolio*/
 
@@ -987,12 +982,11 @@ body {
 display: flex;
 width: 570px;
 flex-direction: column;
-margin-left: 93px;
+margin-left: auto;
 }
 
 .form-conteiner {
  display: flex;
-
 }
 
 .icon-form {
@@ -1235,16 +1229,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: var(--accent-color);
 }
 
-.chekbox-md {
-display: flex;
-justify-content: center;
-
-height: 24px;
-margin-left: auto;
-margin-right: auto;
-margin-bottom: 30px;
-}
-
 .chekbox-input {
 position: absolute;
 width: 1px;
@@ -1257,19 +1241,21 @@ clip: rect(0 0 0 0);
     display: inline-flex;
     width: 16px;
     height: 15px;
-    border: 1px solid var(--main-color);
-    border-radius: 4px;
+    border: 2px solid var(--main-color);
+    border-radius: 2px;
     margin: 0px;
    
     background-color: var(--white);
  
     fill: none;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .chekbox-input:checked + .chekbox-icon {
 fill: var(--accent-color);
 border-color: var(--accent-color);
+background-color: var(--accent-color);
 }
 
 .chekbox-svg {
@@ -1278,18 +1264,24 @@ border-color: var(--accent-color);
 }
 
 .confidence-md {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 24px;
+margin-bottom: 30px;
+gap: 8px;
+
 font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;
 color: var(--sec-color);
-
 }
 
 .confidence-link {
 color: var(--accent-color);
 text-decoration-line: underline;
 text-underline-position: under;
-margin-left: 5px;
+margin: 0;
 }
 
 .list {
